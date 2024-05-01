@@ -1,0 +1,66 @@
+.container {
+    text-align: center;
+    padding: 0.5rem 2rem;
+}
+
+.array-container {
+    display: flex;
+    height: 50vh;
+}
+
+.array-bar {
+    width: 2px;
+    margin: 0 1px;
+    flex-grow: 1;
+}
+
+.bar-visited {
+    animation-name: finishAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+@keyframes finishAnimation {
+    0% {
+        background-color: #ff79c6;
+    }
+
+    50% {
+        background-color: #f1fa8c
+    }
+
+    75% {
+        background-color: #50fa7b;
+    }
+
+    100% {
+        background-color: #6272a4;
+    }
+}
+
+#buttons {
+    padding: 2rem;
+    align-content: center;
+}
+
+#buttons button {
+    padding: 1rem;
+    background-color: #ff79c6;
+    color: #f8f8f2;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    border: none;
+
+}
+
+#buttons button:disabled {
+    background-color: #64656E;
+}

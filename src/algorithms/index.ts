@@ -1,0 +1,3 @@
+export enum Algorithm {
+    BUBBLE_SORT, MERGE_SORT, SELECTION_SORT, INSERTION_SORT
+}
