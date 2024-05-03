@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { ChangeEvent, useEffect, useRef, useState } from "react";
 import "./SortingVisualizer.css";
 import { getMergeSortAnimations } from "../../algorithms/MergeSort";
@@ -18,14 +19,17 @@ export const SORTED_COLOR = "#50fa7b";
 export default function SortingVisualizer() {
   const [array, setArray] = useState<number[]>([]);
   const [numberBars, setNumberBars] = useState<number>(60);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [speed, setSpeed] = useState<number>(ANIMATION_SPEED_MS);
   const [sorted, setSorted] = useState<boolean>(true);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [runtime, setRuntime] = useState<number>(0);
   let promises: Promise<unknown>[] = [];
   let timers: any = [];
 
   useEffect(() => {
     resetArray();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [numberBars, speed]);
 
   function resetArray() {
@@ -49,6 +53,7 @@ export default function SortingVisualizer() {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   function isSorted() {
     let flag: boolean = true;
 
