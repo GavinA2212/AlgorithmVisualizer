@@ -7,4 +7,4 @@ Sorting Algorithms include Selection Sort, Bubble Sort, Insertion Sort, and Merg
 Pathfinding Algorithms include Breadth First Search and Depth First Search.
 
 
-Check it out here: https://gavina2212.github.io/AlgorithmVisualizer/
+Check it out here: https://myalgorithmvisualizer.netlify.app
